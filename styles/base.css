@@ -21,7 +21,6 @@ nav ul {
 }
 
 nav ul li {
-    /* display: inline; */
     text-align: center;
     margin: auto;
     
@@ -34,7 +33,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration: overline;
+    text-decoration: underline;
 }
 
 main {
@@ -50,6 +49,7 @@ h2 {
     padding: 20px;
     margin: 0 auto;
     text-align: center;
+    border-radius: 10px;
 }
 
 .card {
@@ -65,7 +65,7 @@ h2 {
     margin: 0 auto;
     margin-top: 20px;
     /* display: flex; */
-    /* text-wrap: wrap; */
+    /* text-wrap: wrap;  */
 }
 
 .card1 {
@@ -85,7 +85,7 @@ h2 {
 
 .card-img {
     float: right;
-    margin: 10px;
+    margin: 5px;
 }
 
 footer {
