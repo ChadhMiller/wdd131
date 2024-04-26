@@ -76,9 +76,11 @@ h2 {
     border-radius: 10px; 
 }
 
-.card1 li {
+.card1 a {
+    display: flex;
     margin: 0 auto;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .card-img {
