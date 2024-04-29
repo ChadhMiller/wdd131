@@ -3,6 +3,12 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    
+    .grid {
+        display: grid;
+        align-items: center;
+    }
+
     header {
         background-color: black;
         color: white;
