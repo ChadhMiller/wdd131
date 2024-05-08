@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place</title>
+    <link rel="stylesheet" href="styles/place.css">
+</head>
+<body>
+    <header>
+        <h1>Louisiana</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-medium.webp" alt="Swamp" width="750" height="600">
+            </picture>
+        </div>
+        <section class="data">
+            <h2>Data</h2>
+            <p>Area: 52,378 sq mi</p>
+            <p>Population: 4.59 million</p>
+            <P>Capital: Baton Rouge</P>
+            <P>Languages: English, Spanish, French Cajun</P>
+            <p>Currency: US Dollar</p>
+            <p>Time Zone: CDT</p>
+            <p>Calling Code: 225</p>
+        </section>
+        <section class="weather">
+            <h2>Weather  </h2>
+            <p>Temperature: 85°F</p>
+            <p>Conditions: Mostly Cloudy</p>
+            <p>Wind: 16 MPH</p>
+            <p> Wind Chill: <span id="wind-chill"></span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Chad Miller, Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/place.js" defer></script>
+</body>
+</html>
