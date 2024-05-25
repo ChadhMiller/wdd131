@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Review Form</title>
+</head>
+<body>
+  <form action="review.html" method="get">
+    <label for="productName">Product Name:</label>
+    <select id="productName" name="productName" required>
+      <option value="" disabled selected>Select a Product ...</option>
+      <!-- Remaining options will be added dynamically using JavaScript -->
+    </select>
+
+    <fieldset id="rating">
+      <legend>Overall Rating:</legend>
+      <input type="radio" id="star1" name="rating" value="1" required>
+      <label for="star1">☆</label>
+      <input type="radio" id="star2" name="rating" value="2" required>
+      <label for="star2">☆☆</label>
+      <input type="radio" id="star3" name="rating" value="3" required>
+      <label for="star3">☆☆☆</label>
+      <input type="radio" id="star4" name="rating" value="4" required>
+      <label for="star4">☆☆☆☆</label>
+      <input type="radio" id="star5" name="rating" value="5" required>
+      <label for="star5">☆☆☆☆☆</label>
+    </fieldset>
+
+    <label for="installationDate">Date of Installation:</label>
+    <input type="date" id="installationDate" name="installationDate" required>
+
+    <!-- Add checkboxes for useful features here -->
+    <fieldset>
+        <legend>Useful Features:</legend>
+        <input type="checkbox" id="feature1" name="feature1" value="Feature 1">
+        <label for="feature1">Ease of Use</label><br>
+      
+        <input type="checkbox" id="feature2" name="feature2" value="Feature 2">
+        <label for="feature2">Performance</label><br>
+      
+        <input type="checkbox" id="feature3" name="feature3" value="Feature 3">
+        <label for="feature3">Durability</label><br>
+      </fieldset>
+      
+
+    <label for="review">Written Review:</label>
+    <textarea id="review" name="review"></textarea>
+
+    <label for="userName">User Name:</label>
+    <input type="text" id="userName" name="userName">
+
+    <input type="submit" value="Submit Review">
+  </form>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Chad Miller, Utah</p>
+    <p id="lastModified"></p>
+  </footer>
+  <script src="scripts/form.js" defer></script>
+</body>
+</html>
