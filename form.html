@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Product Review Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <meta name="description" content="WDD 131 - Example of a form.">
+    <meta name="author" content="Chad Miller">
 </head>
 <body>
   <form action="review.html" method="get">
     <label for="productName">Product Name:</label>
     <select id="productName" name="productName" required>
       <option value="" disabled selected>Select a Product ...</option>
-      <!-- Remaining options will be added dynamically using JavaScript -->
     </select>
 
     <fieldset id="rating">
@@ -28,7 +32,7 @@
     <label for="installationDate">Date of Installation:</label>
     <input type="date" id="installationDate" name="installationDate" required>
 
-    <!-- Add checkboxes for useful features here -->
+
     <fieldset>
         <legend>Useful Features:</legend>
         <input type="checkbox" id="feature1" name="feature1" value="Feature 1">
@@ -39,6 +43,9 @@
       
         <input type="checkbox" id="feature3" name="feature3" value="Feature 3">
         <label for="feature3">Durability</label><br>
+
+        <input type="checkbox" id="feature4" name="feature4" value="Feature 4">
+        <label for="feature4">Design</label><br>
       </fieldset>
       
 

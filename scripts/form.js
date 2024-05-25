@@ -28,18 +28,24 @@ const products = [
 
 
   window.onload = function() {
-    // Check if the 'reviewsCompleted' item exists in localStorage
+  
     if (localStorage.getItem('reviewsCompleted')) {
-      // If it exists, get the current value, increment it by 1, and store it back in localStorage
       let reviewsCompleted = parseInt(localStorage.getItem('reviewsCompleted'));
       reviewsCompleted += 1;
       localStorage.setItem('reviewsCompleted', reviewsCompleted);
     } else {
-      // If it doesn't exist, set it to 1
       localStorage.setItem('reviewsCompleted', 1);
     }
   
-    // Display the number of reviews completed
     console.log('Number of reviews completed: ' + localStorage.getItem('reviewsCompleted'));
+  
+    var select = document.getElementById('productName');
+  
+    for(var i = 0; i < products.length; i++) {
+      var opt = document.createElement('option');
+      opt.innerHTML = products[i].name;
+      opt.value = products[i].id;
+      select.appendChild(opt);
+    }
   };
   
