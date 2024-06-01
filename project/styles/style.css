@@ -1,0 +1,147 @@
+/* Home page */
+header {
+    background-color: #374618;
+    color: #ff9678;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #ff9678;
+    text-align: center;
+    text-decoration: none;
+    padding: 35px;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #ff9678;
+    /* use nav color for hover */
+}
+
+.logo {
+    width: 80px;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+#content {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    background-color: #374618;
+    color: #FEE99F;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+.card-img {
+    float: right;
+    border: 10px solid #a48965;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    margin: 5px;
+}
+
+footer a {
+    color: #ff9678;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #374618;
+    color: #ff9678;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer p a:hover {
+    background-color: white;
+    color: #ff9678;
+    text-decoration: none;
+    padding: 35px;
+}
+
+footer p {
+    font-size: 1.2em;
+    padding: 25px 50px;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+.home-page {
+    max-width: 85%;
+    margin: auto;
+}
+
+.post {
+    background-color: #374618;
+    background-color: #1A564C;
+    color: #FEE99F;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    header {
+      grid-template-columns: 1fr;
+    }
+  
+    nav {
+      flex-direction: column;
+    }
+  
+    nav a {
+      padding: 10px 0;
+    }
+  
+    .logo {
+      width: 60px;
+    }
+  
+    #content {
+      max-width: 90%;
+    }
+  
+    .card-img {
+      float: none;
+      margin: 0 auto;
+    }
+  
+    footer {
+      flex-direction: column;
+    }
+  
+    footer p {
+      padding: 10px;
+    }
+  
+    .home-page {
+      max-width: 95%;
+    }
+  }
+  
